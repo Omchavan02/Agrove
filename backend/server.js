@@ -21,7 +21,29 @@ import connectDB from "./config/db.js";
 import Advisory from "./models/Advisory.js";
 import authAdmin from "./middleware/authAdmin.js"; // [NEW] Using the new admin middleware
 
+import Admin from "./models/Admin.js";
+import bcrypt from "bcryptjs";
+
 const app = express();
+
+/* SETUP ROUTE - DELETE AFTER USE */
+app.get("/api/setup-admin", async (req, res) => {
+  try {
+    const hashedPassword = await bcrypt.hash("admin123", 10);
+    const exists = await Admin.findOne({ email: "admin@agrove.com" });
+    if (exists) {
+      return res.send("Admin already exists. You can now login at the portal.");
+    }
+    await Admin.create({
+      email: "admin@agrove.com",
+      password: hashedPassword
+    });
+    res.send("✅ Admin created successfully! PLEASE LOG IN AND THEN ASK ME TO REMOVE THIS ROUTE FOR SECURITY.");
+  } catch (error) {
+    res.status(500).send("Error: " + error.message);
+  }
+});
+
 
 /* MIDDLEWARE */
 app.use(cors({
