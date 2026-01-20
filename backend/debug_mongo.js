@@ -12,15 +12,16 @@ dotenv.config({ path: path.join(__dirname, ".env") });
 
 const runDebug = async () => {
     console.log("🐛 Starting MongoDB Write Debug...");
-    console.log("Checking MONGO_URI:", process.env.MONGO_URI ? "Defined ✅" : "Missing ❌");
+    const uri = process.env.MONGO_URI || process.env.MONGODB_URI;
+    console.log("Checking MongoDB URI:", uri ? "Defined ✅" : "Missing ❌");
 
-    if (!process.env.MONGO_URI) {
-        console.error("❌ Error: MONGO_URI is not set in .env file.");
+    if (!uri) {
+        console.error("❌ Error: MONGO_URI or MONGODB_URI is not set.");
         process.exit(1);
     }
 
     try {
-        await mongoose.connect(process.env.MONGO_URI);
+        await mongoose.connect(uri);
         console.log("✅ MongoDB Connected.");
 
         // Create a dummy advisory

@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 // Use env var or fallback (though env is better)
-const MONGO_URI = process.env.MONGO_URI;
+const MONGO_URI = process.env.MONGO_URI || process.env.MONGODB_URI;
 
 if (!MONGO_URI) {
     console.error("❌ MONGO_URI is not set in .env file");

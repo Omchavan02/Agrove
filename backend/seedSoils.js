@@ -381,7 +381,7 @@ const soilsData = [
 
 const seedDB = async () => {
     try {
-        const MONGO_URI = process.env.MONGO_URI;
+        const MONGO_URI = process.env.MONGO_URI || process.env.MONGODB_URI;
 
         if (!MONGO_URI) {
             console.error("❌ MONGO_URI is not set in .env file");
