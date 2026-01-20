@@ -12,6 +12,11 @@ const cleanNumber = (value) => {
 ===================================================== */
 export const createActivity = async (req, res) => {
   try {
+    if (!req.user || !req.user.id) {
+      console.error("Authentication failed: req.user is undefined");
+      return res.status(401).json({ message: "Authentication required" });
+    }
+
     const userId = req.user.id;
 
     console.log('Received request body:', req.body);
@@ -134,6 +139,11 @@ export const createActivity = async (req, res) => {
 ===================================================== */
 export const getActivities = async (req, res) => {
   try {
+    if (!req.user || !req.user.id) {
+      console.error("Authentication failed: req.user is undefined");
+      return res.status(401).json({ message: "Authentication required" });
+    }
+
     const userId = req.user.id;
 
     const activities = await Activity.find({ user: userId })
@@ -142,7 +152,8 @@ export const getActivities = async (req, res) => {
     res.json(activities);
   } catch (error) {
     console.error("Get activities error:", error);
-    res.status(500).json({ message: "Server error" });
+    console.error("Error stack:", error.stack);
+    res.status(500).json({ message: "Server error", error: error.message });
   }
 };
 
