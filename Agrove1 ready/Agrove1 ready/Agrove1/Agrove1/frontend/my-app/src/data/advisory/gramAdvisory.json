@@ -1,0 +1,143 @@
+{
+    "header": {
+        "image": "https://res.cloudinary.com/dkdmefrit/image/upload/v1767497580/download_3_uyctz8.jpg",
+        "imageAlt": "Gram (Chickpea) field",
+        "title": "Gram (Chickpea) Advisory",
+        "tags": [
+            {
+                "text": "Rabi (Winter Season)",
+                "bgClass": "bg-orange-500"
+            },
+            {
+                "text": "Recommended: Sandy Loam, Clay Loam",
+                "bgClass": "bg-gray-500"
+            }
+        ]
+    },
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Gram (Chickpea) is a major pulse crop grown in the Rabi season. It requires a cool climate and less water. It is highly sensitive to frost during flowering and waterlogging."
+        },
+        "climate": {
+            "title": "Ideal Soil & Climate",
+            "items": [
+                {
+                    "label": "Temperature",
+                    "value": "15-25°C (Cool & Dry)",
+                    "iconKey": "Thermometer",
+                    "colors": {
+                        "bg": "bg-green-50",
+                        "border": "border-green-100",
+                        "text": "text-green-700"
+                    }
+                },
+                {
+                    "label": "Rainfall",
+                    "value": "60-90 cm annually",
+                    "iconKey": "CloudRain",
+                    "colors": {
+                        "bg": "bg-blue-50",
+                        "border": "border-blue-100",
+                        "text": "text-blue-700"
+                    }
+                },
+                {
+                    "label": "Moisture",
+                    "value": "Avoid Waterlogging",
+                    "iconKey": "Droplets",
+                    "colors": {
+                        "bg": "bg-purple-50",
+                        "border": "border-purple-100",
+                        "text": "text-purple-700"
+                    }
+                }
+            ]
+        },
+        "sowing": {
+            "title": "Sowing Guide",
+            "items": [
+                {
+                    "label": "Sowing Time",
+                    "value": "October - November"
+                },
+                {
+                    "label": "Sowing Depth",
+                    "value": "8-10 cm deep"
+                },
+                {
+                    "label": "Spacing",
+                    "value": "30 cm x 10 cm"
+                },
+                {
+                    "label": "Seed Rate",
+                    "value": "75-100 kg/hectare"
+                }
+            ]
+        },
+        "fertilizer": {
+            "title": "Fertilizer Recommendations",
+            "columns": [
+                "Nutrient",
+                "Dosage",
+                "Application Timing"
+            ],
+            "rows": [
+                {
+                    "nutrient": "DAP",
+                    "dosage": "100 kg/ha",
+                    "timing": "Full dose at time of sowing"
+                },
+                {
+                    "nutrient": "Sulphur",
+                    "dosage": "20 kg/ha",
+                    "timing": "Applied before sowing"
+                },
+                {
+                    "nutrient": "Bio-Fertilizer",
+                    "dosage": "Rhizobium Culture",
+                    "timing": "Seed treatment before sowing"
+                }
+            ]
+        },
+        "irrigation": {
+            "title": "Irrigation Schedule",
+            "items": [
+                {
+                    "stage": "Pre-Sowing",
+                    "time": "Before Oct",
+                    "method": "Ensure Soil Moisture"
+                },
+                {
+                    "stage": "Branching Stage",
+                    "time": "45 Days after sowing",
+                    "method": "Light Irrigation"
+                },
+                {
+                    "stage": "Pod Development",
+                    "time": "75 Days after sowing",
+                    "method": "Critical Stage"
+                }
+            ]
+        },
+        "pest": {
+            "title": "Pest & Disease Management",
+            "items": [
+                {
+                    "name": "Gram Pod Borer",
+                    "symptoms": "Larvae boring into pods, eating seeds",
+                    "control": "Install Pheromone traps, Spray Quinalphos"
+                },
+                {
+                    "name": "Wilt",
+                    "symptoms": "Sudden drooping of leaves, drying of plant",
+                    "control": "Seed treatment with Trichoderma, grow resistant varieties"
+                }
+            ]
+        },
+        "harvesting": {
+            "title": "Harvesting Tips",
+            "content": "Harvest when leaves turn reddish-brown and start shedding. Pods should be dry and hard. Harvest early morning to avoid shattering of pods."
+        }
+    }
+}

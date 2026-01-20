@@ -1,0 +1,143 @@
+{
+    "header": {
+        "title": "Sesame (Til) Advisory",
+        "image": "https://res.cloudinary.com/ddgxqjfbp/image/upload/v1768414612/download_8_qaqqk5.jpg",
+        "imageAlt": "Sesame field",
+        "tags": [
+            {
+                "text": "Kharif / Summer",
+                "bgClass": "bg-yellow-500"
+            },
+            {
+                "text": "Soil: Sandy Loam, Red",
+                "bgClass": "bg-gray-500"
+            }
+        ]
+    },
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Sesame (Sesamum indicum), known as 'Til', is the oldest oilseed crop known to humanity. It is drought-tolerant and can grow where most crops fail. It is rich in oil (40-50%) and protein."
+        },
+        "climate": {
+            "title": "Ideal Soil & Climate",
+            "items": [
+                {
+                    "label": "Temperature",
+                    "value": "25-35°C ideal",
+                    "iconKey": "Thermometer",
+                    "colors": {
+                        "bg": "bg-orange-50",
+                        "border": "border-orange-100",
+                        "text": "text-orange-700"
+                    }
+                },
+                {
+                    "label": "Rainfall",
+                    "value": "45-50 cm annually",
+                    "iconKey": "CloudRain",
+                    "colors": {
+                        "bg": "bg-blue-50",
+                        "border": "border-blue-100",
+                        "text": "text-blue-700"
+                    }
+                },
+                {
+                    "label": "Soil",
+                    "value": "Well-drained sandy loam",
+                    "iconKey": "Droplets",
+                    "colors": {
+                        "bg": "bg-amber-50",
+                        "border": "border-amber-100",
+                        "text": "text-amber-700"
+                    }
+                }
+            ]
+        },
+        "sowing": {
+            "title": "Sowing Guide",
+            "items": [
+                {
+                    "label": "Sowing Time",
+                    "value": "Kharif: June-July | Summer: Jan-Feb"
+                },
+                {
+                    "label": "Seed Rate",
+                    "value": "3-4 kg/ha (Broadcasting), 2-3 kg/ha (Line Sowing)"
+                },
+                {
+                    "label": "Spacing",
+                    "value": "30×10 cm"
+                },
+                {
+                    "label": "Depth",
+                    "value": "2-3 cm (Shallow sowing)"
+                }
+            ]
+        },
+        "fertilizer": {
+            "title": "Fertilizer Recommendations",
+            "columns": [
+                "Nutrient",
+                "Dosage",
+                "Application Timing"
+            ],
+            "rows": [
+                {
+                    "nutrient": "Nitrogen (N)",
+                    "dosage": "40 kg/ha",
+                    "timing": "Split: 50% basal, 50% at 30-35 DAS"
+                },
+                {
+                    "nutrient": "Phosphorus (P)",
+                    "dosage": "25 kg/ha",
+                    "timing": "Basal application"
+                },
+                {
+                    "nutrient": "Potassium (K)",
+                    "dosage": "25 kg/ha",
+                    "timing": "Basal application"
+                }
+            ]
+        },
+        "irrigation": {
+            "title": "Irrigation Schedule",
+            "items": [
+                {
+                    "stage": "Kharif Crop",
+                    "time": "-",
+                    "method": "Mostly rainfed"
+                },
+                {
+                    "stage": "Summer Crop",
+                    "time": "Every 12-15 days",
+                    "method": "Critical stages: Flowering & Pod formation"
+                }
+            ]
+        },
+        "pest": {
+            "title": "Pest & Disease Management",
+            "items": [
+                {
+                    "name": "Leaf Roller/Capsule Borer",
+                    "symptoms": "Rolled leaves, bore holes in pods",
+                    "control": "Spray Quinalphos 25 EC"
+                },
+                {
+                    "name": "Phyllody",
+                    "symptoms": "Floral parts turn leafy (Green)",
+                    "control": "Remove infected plants, control leaf hoppers"
+                },
+                {
+                    "name": "Powdery Mildew",
+                    "symptoms": "White powder on leaves",
+                    "control": "Wettable Sulphur spray"
+                }
+            ]
+        },
+        "harvesting": {
+            "title": "Harvesting Tips",
+            "content": "Harvest when leaves turn yellow and capsules begin to open. Do not wait for dead dry stage to avoid shattering losses. Tie in bundles and stack upright for drying."
+        }
+    }
+}

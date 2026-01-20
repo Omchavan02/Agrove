@@ -1,0 +1,154 @@
+{
+    "header": {
+        "image": "https://res.cloudinary.com/ddgxqjfbp/image/upload/v1768414444/download_3_teg21d.jpg",
+        "imageAlt": "Potato field",
+        "title": "Potato Advisory",
+        "tags": [
+            {
+                "text": "Horticultural Crop",
+                "bgClass": "bg-yellow-600"
+            },
+            {
+                "text": "Recommended: Sandy Loam, Rich in Organic Matter",
+                "bgClass": "bg-gray-500"
+            }
+        ]
+    },
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Potato (*Solanum tuberosum*) is a major staple food and the most important tuber crop. It is rich in carbohydrates and is grown worldwide. It requires cool climate for tuber formation."
+        },
+        "climate": {
+            "title": "Ideal Soil & Climate",
+            "items": [
+                {
+                    "label": "Temperature",
+                    "value": "15-25°C (20°C ideal for tubers)",
+                    "iconKey": "Thermometer",
+                    "colors": {
+                        "bg": "bg-green-50",
+                        "border": "border-green-100",
+                        "text": "text-green-700"
+                    }
+                },
+                {
+                    "label": "Rainfall",
+                    "value": "50-70 cm",
+                    "iconKey": "CloudRain",
+                    "colors": {
+                        "bg": "bg-blue-50",
+                        "border": "border-blue-100",
+                        "text": "text-blue-700"
+                    }
+                },
+                {
+                    "label": "Soil pH",
+                    "value": "5.0 - 6.5 (Slightly Acidic)",
+                    "iconKey": "Droplets",
+                    "colors": {
+                        "bg": "bg-purple-50",
+                        "border": "border-purple-100",
+                        "text": "text-purple-700"
+                    }
+                }
+            ]
+        },
+        "sowing": {
+            "title": "Planting Guide",
+            "items": [
+                {
+                    "label": "Planting Season",
+                    "value": "Oct - Nov (Plains), Mar - Apr (Hills)"
+                },
+                {
+                    "label": "Seed Rate",
+                    "value": "2000-2500 kg/ha"
+                },
+                {
+                    "label": "Spacing",
+                    "value": "60 x 20 cm"
+                },
+                {
+                    "label": "Planting Depth",
+                    "value": "5-7 cm"
+                }
+            ]
+        },
+        "fertilizer": {
+            "title": "Fertilizer Recommendations",
+            "columns": [
+                "Nutrient",
+                "Dosage (kg/ha)",
+                "Application Timing"
+            ],
+            "rows": [
+                {
+                    "nutrient": "Nitrogen (N)",
+                    "dosage": "120-150 kg",
+                    "timing": "50% Basal, 50% at earthing up"
+                },
+                {
+                    "nutrient": "Phosphorus (P)",
+                    "dosage": "80-100 kg",
+                    "timing": "Full dose basal application"
+                },
+                {
+                    "nutrient": "Potassium (K)",
+                    "dosage": "100-120 kg",
+                    "timing": "Full dose basal application"
+                },
+                {
+                    "nutrient": "FYM",
+                    "dosage": "25 tonnes",
+                    "timing": "Before planting"
+                }
+            ]
+        },
+        "irrigation": {
+            "title": "Irrigation Schedule",
+            "subtitle": "Potato has shallow roots and requires frequent light irrigation. Avoid water stagnation.",
+            "items": [
+                {
+                    "stage": "Stolon Formation",
+                    "time": "20-25 DAP",
+                    "method": "Critical"
+                },
+                {
+                    "stage": "Tuberization",
+                    "time": "40-45 DAP",
+                    "method": "Most Critical"
+                },
+                {
+                    "stage": "Tuber Bulking",
+                    "time": "60-65 DAP",
+                    "method": "Essential"
+                }
+            ]
+        },
+        "pest": {
+            "title": "Pest & Disease Management",
+            "items": [
+                {
+                    "name": "Late Blight",
+                    "symptoms": "Blackish water-soaked lesions on leaves",
+                    "control": "Spray Mancozeb or Metalaxyl"
+                },
+                {
+                    "name": "Early Blight",
+                    "symptoms": "Concentric rings/bull's eye spots on leaves",
+                    "control": "Spray Chlorothalonil"
+                },
+                {
+                    "name": "Potato Tuber Moth",
+                    "symptoms": "Tunnels in tubers",
+                    "control": "Proper banking of soil, use of pheromone traps"
+                }
+            ]
+        },
+        "harvesting": {
+            "title": "Harvesting Tips",
+            "content": "Haulms (vines) should be cut 10-15 days before harvesting to harden the skin. Dig tubers carefully to avoid injury. Dry tubers in shade before storage."
+        }
+    }
+}

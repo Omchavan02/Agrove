@@ -1,0 +1,154 @@
+{
+    "header": {
+        "image": "https://res.cloudinary.com/ddgxqjfbp/image/upload/v1768418359/download_uylgz4.jpg",
+        "imageAlt": "Groundnut field",
+        "title": "Groundnut Advisory",
+        "tags": [
+            {
+                "text": "Kharif (June - July)",
+                "bgClass": "bg-green-600"
+            },
+            {
+                "text": "Recommended: Sandy Loam",
+                "bgClass": "bg-gray-500"
+            }
+        ]
+    },
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Groundnut (Peanut) is a major oilseed crop in India. Ideally suited for sandy loam soils, it is grown in Kharif, Rabi, and Summer seasons. It is valuable involved in crop rotation for soil fertility."
+        },
+        "climate": {
+            "title": "Ideal Soil & Climate",
+            "items": [
+                {
+                    "label": "Temperature",
+                    "value": "25-30°C (growth)",
+                    "iconKey": "Thermometer",
+                    "colors": {
+                        "bg": "bg-green-50",
+                        "border": "border-green-100",
+                        "text": "text-green-700"
+                    }
+                },
+                {
+                    "label": "Rainfall",
+                    "value": "50-100 cm",
+                    "iconKey": "CloudRain",
+                    "colors": {
+                        "bg": "bg-blue-50",
+                        "border": "border-blue-100",
+                        "text": "text-blue-700"
+                    }
+                },
+                {
+                    "label": "Soil",
+                    "value": "Well-drained Sandy Loam",
+                    "iconKey": "Droplets",
+                    "colors": {
+                        "bg": "bg-purple-50",
+                        "border": "border-purple-100",
+                        "text": "text-purple-700"
+                    }
+                }
+            ]
+        },
+        "sowing": {
+            "title": "Sowing Guide",
+            "items": [
+                {
+                    "label": "Sowing Time",
+                    "value": "June - July (Kharif)"
+                },
+                {
+                    "label": "Sowing Depth",
+                    "value": "5-6 cm"
+                },
+                {
+                    "label": "Spacing",
+                    "value": "30x10 cm (Bunch), 45x15 cm (Spreading)"
+                },
+                {
+                    "label": "Seed Rate",
+                    "value": "100-120 kg/ha (Kernel)"
+                }
+            ]
+        },
+        "fertilizer": {
+            "title": "Fertilizer Recommendations",
+            "columns": [
+                "Nutrient",
+                "Dosage",
+                "Application Timing"
+            ],
+            "rows": [
+                {
+                    "nutrient": "Nitrogen (N)",
+                    "dosage": "20-25 kg/ha",
+                    "timing": "Basal application"
+                },
+                {
+                    "nutrient": "Phosphorus (P)",
+                    "dosage": "40-50 kg/ha",
+                    "timing": "Full dose at sowing"
+                },
+                {
+                    "nutrient": "Potassium (K)",
+                    "dosage": "60 kg/ha",
+                    "timing": "Full dose at sowing"
+                },
+                {
+                    "nutrient": "Gypsum/Ca",
+                    "dosage": "250 kg/ha",
+                    "timing": "At flowering (peg formation)"
+                }
+            ]
+        },
+        "irrigation": {
+            "title": "Irrigation Schedule",
+            "subtitle": "Provide life-saving irrigation during dry spells, especially at pegging and pod formation.",
+            "items": [
+                {
+                    "stage": "Flowering",
+                    "time": "20-30 DAS",
+                    "method": "Critical"
+                },
+                {
+                    "stage": "Peg Formation",
+                    "time": "40-45 DAS",
+                    "method": "Most Critical"
+                },
+                {
+                    "stage": "Pod Development",
+                    "time": "65-75 DAS",
+                    "method": "Essential"
+                }
+            ]
+        },
+        "pest": {
+            "title": "Pest & Disease Management",
+            "items": [
+                {
+                    "name": "Tikka Disease (Leaf Spot)",
+                    "symptoms": "Dark spots with yellow halo on leaves",
+                    "control": "Spray Carbendazim or Mancozeb"
+                },
+                {
+                    "name": "Leaf Miner",
+                    "symptoms": "Larvae mine into leaves, causing blisters",
+                    "control": "Spray Chlorpyriphos or Dimethoate"
+                },
+                {
+                    "name": "White Grub",
+                    "symptoms": "Roots eaten, plants wilt and die",
+                    "control": "Soil application of Phorate or Chlorpyriphos"
+                }
+            ]
+        },
+        "harvesting": {
+            "title": "Harvesting Tips",
+            "content": "Harvest when leaves turn yellow and dry. Pod shells should be hard and inside of the shell should turn dark. Uproot plants and cure in sun."
+        }
+    }
+}

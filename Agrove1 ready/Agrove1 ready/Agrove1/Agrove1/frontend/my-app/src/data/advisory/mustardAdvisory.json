@@ -1,0 +1,149 @@
+{
+    "header": {
+        "image": "https://res.cloudinary.com/dkdmefrit/image/upload/v1767497580/download_4_wgkb7r.jpg",
+        "imageAlt": "Mustard field",
+        "title": "Mustard Advisory",
+        "tags": [
+            {
+                "text": "Rabi (Oct - Nov)",
+                "bgClass": "bg-yellow-500"
+            },
+            {
+                "text": "Recommended: Sandy Loam, Clay Loam",
+                "bgClass": "bg-gray-500"
+            }
+        ]
+    },
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Mustard is a major Rabi oilseed crop in India, widely grown in Rajasthan, Haryana, and UP. It requires distinct cool and dry weather for optimal growth and high oil content."
+        },
+        "climate": {
+            "title": "Ideal Soil & Climate",
+            "items": [
+                {
+                    "label": "Temperature",
+                    "value": "10-25°C (cool & dry)",
+                    "iconKey": "Thermometer",
+                    "colors": {
+                        "bg": "bg-green-50",
+                        "border": "border-green-100",
+                        "text": "text-green-700"
+                    }
+                },
+                {
+                    "label": "Rainfall",
+                    "value": "25-40 cm (low water need)",
+                    "iconKey": "CloudRain",
+                    "colors": {
+                        "bg": "bg-blue-50",
+                        "border": "border-blue-100",
+                        "text": "text-blue-700"
+                    }
+                },
+                {
+                    "label": "Soil",
+                    "value": "Light to Heavy Loam",
+                    "iconKey": "Droplets",
+                    "colors": {
+                        "bg": "bg-purple-50",
+                        "border": "border-purple-100",
+                        "text": "text-purple-700"
+                    }
+                }
+            ]
+        },
+        "sowing": {
+            "title": "Sowing Guide",
+            "items": [
+                {
+                    "label": "Sowing Time",
+                    "value": "Late Sept - Oct"
+                },
+                {
+                    "label": "Sowing Depth",
+                    "value": "2-3 cm"
+                },
+                {
+                    "label": "Spacing",
+                    "value": "45 x 15 cm"
+                },
+                {
+                    "label": "Seed Rate",
+                    "value": "4-5 kg/hectare"
+                }
+            ]
+        },
+        "fertilizer": {
+            "title": "Fertilizer Recommendations",
+            "columns": [
+                "Nutrient",
+                "Dosage",
+                "Application Timing"
+            ],
+            "rows": [
+                {
+                    "nutrient": "Nitrogen (N)",
+                    "dosage": "80 kg/ha",
+                    "timing": "50% basal, 50% at first irrigation"
+                },
+                {
+                    "nutrient": "Phosphorus (P)",
+                    "dosage": "40 kg/ha",
+                    "timing": "Full dose at sowing"
+                },
+                {
+                    "nutrient": "Sulfur (S)",
+                    "dosage": "40 kg/ha",
+                    "timing": "Highly recommended for oil content"
+                },
+                {
+                    "nutrient": "Zinc",
+                    "dosage": "25 kg/ha",
+                    "timing": "Basal application"
+                }
+            ]
+        },
+        "irrigation": {
+            "title": "Irrigation Schedule",
+            "subtitle": "Requires less water. Provide irrigation mainly at critical stages if winter rains are absent.",
+            "items": [
+                {
+                    "stage": "Pre-flowering",
+                    "time": "30-40 DAS",
+                    "method": "Critical"
+                },
+                {
+                    "stage": "Siliqua Formation",
+                    "time": "60-70 DAS",
+                    "method": "Essential for seed fill"
+                }
+            ]
+        },
+        "pest": {
+            "title": "Pest & Disease Management",
+            "items": [
+                {
+                    "name": "Mustard Aphid",
+                    "symptoms": "Sucks sap from leaves and pods, colonies seen",
+                    "control": "Spray Dimethoate or Imidacloprid"
+                },
+                {
+                    "name": "White Rust",
+                    "symptoms": "White pustules on leaves",
+                    "control": "Seed treatment with Metalaxyl, spray Mancozeb"
+                },
+                {
+                    "name": "Painted Bug",
+                    "symptoms": "Nymphs and adults suck sap",
+                    "control": "Irrigate field, spray Malathion"
+                }
+            ]
+        },
+        "harvesting": {
+            "title": "Harvesting Tips",
+            "content": "Harvest when 75% of siliquae (pods) turn yellow. Delay leads to shattering of seeds. Harvest in morning hours to avoid shattering."
+        }
+    }
+}

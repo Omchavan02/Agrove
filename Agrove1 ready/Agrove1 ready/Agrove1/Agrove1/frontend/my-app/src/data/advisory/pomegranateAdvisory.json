@@ -1,0 +1,124 @@
+{
+    "header": {
+        "title": "Pomegranate Advisory",
+        "image": "https://res.cloudinary.com/ddgxqjfbp/image/upload/v1768414837/download_hjuel5.jpg",
+        "imageAlt": "Pomegranate fruit",
+        "tags": [
+            {
+                "text": "Horticultural Crop",
+                "bgClass": "bg-red-500"
+            },
+            {
+                "text": "Soil: Sandy Loam",
+                "bgClass": "bg-gray-500"
+            }
+        ]
+    },
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Pomegranate (Punica granatum) is a drought-tolerant fruit crop grown in arid and semi-arid regions. India is the largest producer widely known for the 'Bhagwa' variety."
+        },
+        "climate": {
+            "title": "Ideal Soil & Climate",
+            "items": [
+                {
+                    "label": "Temperature",
+                    "value": "25-35°C (Development)",
+                    "iconKey": "Thermometer",
+                    "colors": {
+                        "bg": "bg-orange-50",
+                        "border": "border-orange-100",
+                        "text": "text-orange-700"
+                    }
+                },
+                {
+                    "label": "Rainfall",
+                    "value": "50-70 cm annually",
+                    "iconKey": "CloudRain",
+                    "colors": {
+                        "bg": "bg-blue-50",
+                        "border": "border-blue-100",
+                        "text": "text-blue-700"
+                    }
+                },
+                {
+                    "label": "Soil",
+                    "value": "Well-drained sandy loam",
+                    "iconKey": "Droplets",
+                    "colors": {
+                        "bg": "bg-amber-50",
+                        "border": "border-amber-100",
+                        "text": "text-amber-700"
+                    }
+                }
+            ]
+        },
+        "sowing": {
+            "title": "Planting Guide",
+            "items": [
+                {
+                    "label": "Propagation",
+                    "value": "Air Layering / Cutting"
+                },
+                {
+                    "label": "Planting Time",
+                    "value": "Aug-Sept or Feb-March"
+                },
+                {
+                    "label": "Spacing",
+                    "value": "4.5×4.5 m"
+                }
+            ]
+        },
+        "fertilizer": {
+            "title": "Fertilizer Recommendations",
+            "columns": [
+                "Nutrient",
+                "Dosage (Per Plant)",
+                "Timing"
+            ],
+            "rows": [
+                {
+                    "nutrient": "N-P-K",
+                    "dosage": "600:250:250 g",
+                    "timing": "For full grown trees"
+                },
+                {
+                    "nutrient": "FYM",
+                    "dosage": "30-40 kg",
+                    "timing": "Annually"
+                }
+            ]
+        },
+        "irrigation": {
+            "title": "Irrigation Schedule",
+            "items": [
+                {
+                    "stage": "Ambe Bahar",
+                    "time": "Regularly",
+                    "method": "Drip irrigation preferred"
+                }
+            ]
+        },
+        "pest": {
+            "title": "Pest & Disease Management",
+            "items": [
+                {
+                    "name": "Fruit Borer",
+                    "symptoms": "Bored holes in fruits",
+                    "control": "Spray Chlorantraniliprole"
+                },
+                {
+                    "name": "Bacterial Blight",
+                    "symptoms": "Oily spots on leaves/fruit",
+                    "control": "Spray Streptocycline + Copper Oxychloride"
+                }
+            ]
+        },
+        "harvesting": {
+            "title": "Harvesting Tips",
+            "content": "Fruits mature in 5-7 months after flowering. Harvest when skin turns yellowish-red and gives a metallic sound on tapping."
+        }
+    }
+}

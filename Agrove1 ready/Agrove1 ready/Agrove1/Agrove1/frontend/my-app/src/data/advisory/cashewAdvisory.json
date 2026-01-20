@@ -1,0 +1,128 @@
+{
+    "header": {
+        "title": "Cashew Advisory",
+        "image": "https://res.cloudinary.com/ddgxqjfbp/image/upload/v1768414808/download_13_a6algc.jpg",
+        "imageAlt": "Cashew nut and apple",
+        "tags": [
+            {
+                "text": "Plantation Crop",
+                "bgClass": "bg-green-500"
+            },
+            {
+                "text": "Soil: Red Sandy Loam",
+                "bgClass": "bg-gray-500"
+            }
+        ]
+    },
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Cashew (Anacardium occidentale) is a high-value plantation crop introduced in India by the Portuguese. It is grown for its nut and cashew apple."
+        },
+        "climate": {
+            "title": "Ideal Soil & Climate",
+            "items": [
+                {
+                    "label": "Temperature",
+                    "value": "20-38°C",
+                    "iconKey": "Thermometer",
+                    "colors": {
+                        "bg": "bg-orange-50",
+                        "border": "border-orange-100",
+                        "text": "text-orange-700"
+                    }
+                },
+                {
+                    "label": "Rainfall",
+                    "value": "60-450 cm (Wide range)",
+                    "iconKey": "CloudRain",
+                    "colors": {
+                        "bg": "bg-blue-50",
+                        "border": "border-blue-100",
+                        "text": "text-blue-700"
+                    }
+                },
+                {
+                    "label": "Soil",
+                    "value": "Red sandy loam, Laterite",
+                    "iconKey": "Droplets",
+                    "colors": {
+                        "bg": "bg-amber-50",
+                        "border": "border-amber-100",
+                        "text": "text-amber-700"
+                    }
+                }
+            ]
+        },
+        "sowing": {
+            "title": "Planting Guide",
+            "items": [
+                {
+                    "label": "Propagation",
+                    "value": "Softwood grafting"
+                },
+                {
+                    "label": "Planting Time",
+                    "value": "June - August"
+                },
+                {
+                    "label": "Spacing",
+                    "value": "7.5×7.5 m (Normal)"
+                },
+                {
+                    "label": "High Density",
+                    "value": "4×4 m"
+                }
+            ]
+        },
+        "fertilizer": {
+            "title": "Fertilizer Recommendations",
+            "columns": [
+                "Nutrient",
+                "Dosage (Per Plant)",
+                "Timing"
+            ],
+            "rows": [
+                {
+                    "nutrient": "N-P-K",
+                    "dosage": "500:125:125 g",
+                    "timing": "For 5+ year old trees"
+                },
+                {
+                    "nutrient": "FYM",
+                    "dosage": "10-15 kg",
+                    "timing": "Annually"
+                }
+            ]
+        },
+        "irrigation": {
+            "title": "Irrigation Schedule",
+            "items": [
+                {
+                    "stage": "Establishment",
+                    "time": "Once a week",
+                    "method": "Summer months only"
+                }
+            ]
+        },
+        "pest": {
+            "title": "Pest & Disease Management",
+            "items": [
+                {
+                    "name": "Tea Mosquito Bug",
+                    "symptoms": "Drying of young shoots",
+                    "control": "Spray Monocrotophos"
+                },
+                {
+                    "name": "Stem and Root Borer",
+                    "symptoms": "Gum exudation, yellowing",
+                    "control": "Extract grub, apply Carbaryl"
+                }
+            ]
+        },
+        "harvesting": {
+            "title": "Harvesting Tips",
+            "content": "Harvest season is usually Feb-May. Harvest only fully mature nuts that fall naturally or shake the tree gently. Separate nut from apple immediately."
+        }
+    }
+}
