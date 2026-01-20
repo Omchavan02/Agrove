@@ -2,19 +2,17 @@
 
 
 
-
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from "react";
 import agroveLogo from "../assets/agrove-logo.png";
 import farmIllustration from "../assets/login-farm-illustration.png";
 import googleIcon from "../assets/google-icon.svg";
 import eyeOpen from "../assets/eye-open.svg";
 import eyeClose from "../assets/eye-close.svg";
-
-
+import { GoogleLogin } from "@react-oauth/google";
+import { jwtDecode } from "jwt-decode";
 import { useAuth } from "../context/AuthContext";
 import { API_BASE } from '../config';
-
-
 
 
 
@@ -81,6 +79,7 @@ export default function Login() {
         window.location.href = "/admin-dashboard";
       } else {
         login(data.token, data.user);
+        navigate("/dashboard");
       }
 
     } catch (error) {
@@ -122,11 +121,6 @@ export default function Login() {
       alert("Registration failed");
     }
   };
-
-  const handleGoogleLogin = () => {
-  window.location.href = `${API_BASE}/api/auth/google`;
-};
-
 
 
 
@@ -285,15 +279,6 @@ export default function Login() {
               </div>
 
               <div className="flex justify-center">
-                <button
-  type="button"
-  onClick={handleGoogleLogin}
-  className="flex items-center gap-3 border px-6 py-3 rounded-xl hover:bg-slate-100 transition"
->
-  <img src={googleIcon} alt="Google" className="w-5 h-5" />
-  <span>Continue with Google</span>
-</button>
-
 
 
                 {/* // fetch("http://localhost:5000/api/auth/google", {
@@ -310,7 +295,33 @@ export default function Login() {
           //     login(data.token, data.user);
           //   }); */}
 
-                
+                <GoogleLogin
+                  onSuccess={(credentialResponse) => {
+                    fetch(`${API_BASE}/api/auth/google`, {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify({
+                        token: credentialResponse.credential, // ✅ ID TOKEN ONLY
+                      }),
+                    })
+                      .then(async (res) => {
+                        if (!res.ok) {
+                          const text = await res.text();
+                          throw new Error(text);
+                        }
+                        return res.json();
+                      })
+                      .then((data) => {
+                        login(data.token, data.user);
+                        navigate("/dashboard");
+                      })
+                      .catch((err) => {
+                        console.error("Google login failed:", err);
+                        alert("Google login failed");
+                      });
+                  }}
+                  onError={() => alert("Google Login Failed")}
+                />
 
               </div>
             </>

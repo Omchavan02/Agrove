@@ -1,12 +1,10 @@
 import express from "express";
-
-
 import {
   createActivity,
   getActivities,
   updateActivity,
   deleteActivity
-} from "../controllers/activityController.js";
+} from "../controllers/activitycontroller.js";
 import { protect } from "../middleware/authMiddleware.js";
 
 const router = express.Router();

@@ -5,7 +5,7 @@ import { API_BASE } from '../config';
 // import farmBg from "../assets/farm-bg.jpg";
 
 
-function Dashboard({ farmer, setActive }) {
+function FarmerProfileDashboard({ farmer, setActive }) {
   // safety check
   if (!farmer) return null;
 
@@ -187,78 +187,78 @@ function ActionButton({ label, onClick, color }) {
   );
 }
 
-// function Documents({ active }) {
-//   const [documents, setDocuments] = useState(null);
+function Documents({ active }) {
+  const [documents, setDocuments] = useState(null);
 
-//   useEffect(() => {
-//   if (active !== "Documents") return;
+  useEffect(() => {
+    if (active !== "Documents") return;
 
-//   const fetchDocuments = async () => {
-//     const token = localStorage.getItem("token");
+    const fetchDocuments = async () => {
+      const token = localStorage.getItem("token");
 
-//     const res = await fetch("http://localhost:5001/api/profile", {
-//       headers: {
-//         Authorization: `Bearer ${token}`,
-//       },
-//     });
+      const res = await fetch(`${API_BASE}/api/profile`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
-//     const data = await res.json();
-//     console.log("DOCUMENTS FROM API:", data.documents);
-//     setDocuments(data.documents || {});
-//   };
+      const data = await res.json();
+      console.log("DOCUMENTS FROM API:", data.documents);
+      setDocuments(data.documents || {});
+    };
 
-//   fetchDocuments();
-// }, [active]);
+    fetchDocuments();
+  }, [active]);
 
 
-//   const documentList = [
-//     { key: "aadhaarNumber", label: "Aadhaar Number", type: "text" },
-//     { key: "rationCard", label: "Ration Card", type: "file" },
-//     { key: "propertyCard", label: "Property Card", type: "file" },
-//     { key: "property712No", label: "7/12 Property Number", type: "text" },
-//     { key: "property712File", label: "7/12 Document", type: "file" },
-//   ];
+  const documentList = [
+    { key: "aadhaarNumber", label: "Aadhaar Number", type: "text" },
+    { key: "rationCard", label: "Ration Card", type: "file" },
+    { key: "propertyCard", label: "Property Card", type: "file" },
+    { key: "property712No", label: "7/12 Property Number", type: "text" },
+    { key: "property712File", label: "7/12 Document", type: "file" },
+  ];
 
-//   return (
-//     <div className="space-y-10">
-//       <h2 className="text-2xl font-bold text-green-800">
-//         Uploaded Documents 📄
-//       </h2>
+  return (
+    <div className="space-y-10">
+      <h2 className="text-2xl font-bold text-green-800">
+        Uploaded Documents 📄
+      </h2>
 
-//       {!documents ? (
-//         <div className="bg-white p-6 rounded-xl shadow text-gray-500">
-//           No documents uploaded yet.
-//         </div>
-//       ) : (
-//         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-//           {documentList.map((doc) => {
-//             const value = documents[doc.key];
-//             if (!value) return null;
+      {!documents ? (
+        <div className="bg-white p-6 rounded-xl shadow text-gray-500">
+          No documents uploaded yet.
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {documentList.map((doc) => {
+            const value = documents[doc.key];
+            if (!value) return null;
 
-//             return (
-//               <div
-//                 key={doc.key}
-//                 className="bg-white p-5 rounded-xl shadow border-l-4 border-green-600"
-//               >
-//                 <p className="text-sm text-gray-500">{doc.label}</p>
+            return (
+              <div
+                key={doc.key}
+                className="bg-white p-5 rounded-xl shadow border-l-4 border-green-600"
+              >
+                <p className="text-sm text-gray-500">{doc.label}</p>
 
-//                 {doc.type === "text" ? (
-//                   <p className="text-lg font-semibold text-gray-800 mt-1">
-//                     {value}
-//                   </p>
-//                 ) : (
-//                   <p className="mt-2 text-green-600 font-medium">
-//                     ✔ Uploaded
-//                   </p>
-//                 )}
-//               </div>
-//             );
-//           })}
-//         </div>
-//       )}
-//     </div>
-//   );
-// }
+                {doc.type === "text" ? (
+                  <p className="text-lg font-semibold text-gray-800 mt-1">
+                    {value}
+                  </p>
+                ) : (
+                  <p className="mt-2 text-green-600 font-medium">
+                    ✔ Uploaded
+                  </p>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
 
 function Prop({ farmer }) {
   return (
@@ -1174,7 +1174,7 @@ function Profile() {
         <div className="flex-1 p-8 overflow-y-auto">
 
           {active === "Dashboard" && (
-            <Dashboard farmer={farmer} setActive={setActive} />
+            <FarmerProfileDashboard farmer={farmer} setActive={setActive} />
           )}
 
           {/* ✅ PROFILE = ENTRY FORM */}
@@ -1183,7 +1183,7 @@ function Profile() {
           {/* ✅ PERSONAL INFO = VIEW ONLY */}
           {active === "Personal Info" && <Prop farmer={farmer} />}
 
-          {active === "Documents" && <Documents />}
+          {active === "Documents" && <Documents active={active} />}
 
           {active === "Sites" && <Sites />}
 

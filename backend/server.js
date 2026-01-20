@@ -24,17 +24,10 @@ import authAdmin from "./middleware/authAdmin.js"; // [NEW] Using the new admin 
 const app = express();
 
 /* MIDDLEWARE */
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      "http://localhost:5174",
-      "https://agrove-six.vercel.app" // ✅ Vercel frontend
-    ],
-    credentials: true,
-  })
-);
-
+app.use(cors({
+  origin: process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(",") : ["http://localhost:5173", "http://localhost:5174"],
+  credentials: true
+}));
 app.use(express.json());
 
 // connectDB(); // Optional if manual connect is used below, but keeping it if it does something specific

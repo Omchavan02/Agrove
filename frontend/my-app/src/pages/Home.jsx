@@ -153,18 +153,16 @@ export default function Home() {
   }, []);
 
 
-  <style>
-    {`
+  return (
+    <div className="font-inter text-slate-900 overflow-x-hidden">
+      <style>
+        {`
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-4px); }
 }
 `}
-  </style>
-
-
-  return (
-    <div className="font-inter text-slate-900 overflow-x-hidden">
+      </style>
 
 
       <section className="relative min-h-[90vh] flex items-center">
@@ -496,7 +494,6 @@ export default function Home() {
     </div>
   );
 }
-<Footer />
 
 
 

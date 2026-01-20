@@ -6,7 +6,7 @@ import { protect } from "../middleware/authMiddleware.js";
 import { OAuth2Client } from "google-auth-library";
 
 const router = express.Router();
-const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
+const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID || process.env.VITE_GOOGLE_CLIENT_ID);
 
 
 // router.post("/register", async (req, res) => {
@@ -141,7 +141,7 @@ router.post("/google", async (req, res) => {
 
     const ticket = await client.verifyIdToken({
       idToken: token,
-      audience: process.env.GOOGLE_CLIENT_ID,
+      audience: process.env.GOOGLE_CLIENT_ID || process.env.VITE_GOOGLE_CLIENT_ID,
     });
 
     const payload = ticket.getPayload();
