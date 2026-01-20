@@ -1,0 +1,148 @@
+{
+    "header": {
+        "title": "Soybean Advisory",
+        "image": "https://res.cloudinary.com/dkdmefrit/image/upload/v1767497595/images_2_yeyoa0.jpg",
+        "imageAlt": "Soybean field",
+        "tags": [
+            {
+                "text": "Kharif",
+                "bgClass": "bg-yellow-600"
+            },
+            {
+                "text": "Soil: Black, Loamy",
+                "bgClass": "bg-gray-600"
+            }
+        ]
+    },
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Soybean is known as the 'Golden Bean'. It is a major oilseed crop that is also very rich in protein. It improves soil fertility by fixing atmospheric nitrogen."
+        },
+        "climate": {
+            "title": "Ideal Soil & Climate",
+            "items": [
+                {
+                    "label": "Temperature",
+                    "value": "26-30°C",
+                    "iconKey": "Thermometer",
+                    "colors": {
+                        "bg": "bg-orange-50",
+                        "border": "border-orange-100",
+                        "text": "text-orange-700"
+                    }
+                },
+                {
+                    "label": "Rainfall",
+                    "value": "60-85 cm",
+                    "iconKey": "CloudRain",
+                    "colors": {
+                        "bg": "bg-blue-50",
+                        "border": "border-blue-100",
+                        "text": "text-blue-700"
+                    }
+                },
+                {
+                    "label": "Germination",
+                    "value": "Min 15°C",
+                    "iconKey": "Sprout",
+                    "colors": {
+                        "bg": "bg-green-50",
+                        "border": "border-green-100",
+                        "text": "text-green-700"
+                    }
+                }
+            ]
+        },
+        "sowing": {
+            "title": "Sowing Guide",
+            "items": [
+                {
+                    "label": "Sowing Time",
+                    "value": "Onset of monsoon (June-July)"
+                },
+                {
+                    "label": "Seed Rate",
+                    "value": "65-75 kg/ha"
+                },
+                {
+                    "label": "Spacing",
+                    "value": "45 x 5 cm"
+                },
+                {
+                    "label": "Depth",
+                    "value": "3 cm (Deep sowing reduces germination)"
+                }
+            ]
+        },
+        "fertilizer": {
+            "title": "Fertilizer Recommendations",
+            "columns": [
+                "Nutrient",
+                "Dosage",
+                "Application Timing"
+            ],
+            "rows": [
+                {
+                    "nutrient": "Nitrogen (N)",
+                    "dosage": "20 kg/ha",
+                    "timing": "Starter dose (Basal)"
+                },
+                {
+                    "nutrient": "Phosphorus (P)",
+                    "dosage": "60-80 kg/ha",
+                    "timing": "Basal Application"
+                },
+                {
+                    "nutrient": "Sulphur (S)",
+                    "dosage": "20 kg/ha",
+                    "timing": "Essential for oilseeds (Basal)"
+                }
+            ]
+        },
+        "irrigation": {
+            "title": "Irrigation Schedule",
+            "items": [
+                {
+                    "stage": "Flowering",
+                    "time": "35-40 DAS",
+                    "method": "Critical"
+                },
+                {
+                    "stage": "Pod Development",
+                    "time": "55-60 DAS",
+                    "method": "Critical"
+                },
+                {
+                    "stage": "Note",
+                    "time": "-",
+                    "method": "Avoid waterlogging at all stages"
+                }
+            ]
+        },
+        "pest": {
+            "title": "Pest & Disease Management",
+            "items": [
+                {
+                    "name": "Stem Fly",
+                    "symptoms": "Withering of plants",
+                    "control": "Thiamethoxam seed treatment"
+                },
+                {
+                    "name": "Girdle Beetle",
+                    "symptoms": "Girdle marks on stem/petiole",
+                    "control": "Triazophos"
+                },
+                {
+                    "name": "Yellow Mosaic Virus",
+                    "symptoms": "Yellowing of leaves",
+                    "control": "Control Whitefly vector"
+                }
+            ]
+        },
+        "harvesting": {
+            "title": "Harvesting Tips",
+            "content": "Harvest when leaves turn yellow and drop off, and pods change colour to yellow/black. Moisture content should be 15-17%. Threshing is done after drying."
+        }
+    }
+}

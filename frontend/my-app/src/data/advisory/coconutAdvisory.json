@@ -1,0 +1,144 @@
+{
+    "header": {
+        "title": "Coconut Advisory",
+        "image": "https://res.cloudinary.com/ddgxqjfbp/image/upload/v1768414401/download_1_j4lr1n.jpg",
+        "imageAlt": "Coconut plantation",
+        "tags": [
+            {
+                "text": "Plantation Crop",
+                "bgClass": "bg-green-700"
+            },
+            {
+                "text": "Recommended: Sandy Loam, Costal Alluvium",
+                "bgClass": "bg-gray-500"
+            }
+        ]
+    },
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Coconut (*Cocos nucifera*) is known as the \"Kalpavriksha\" or tree of heaven. It provides food, oil, coir, and timber. It thrives in tropical climates and is a major crop in coastal regions."
+        },
+        "climate": {
+            "title": "Ideal Soil & Climate",
+            "items": [
+                {
+                    "label": "Temperature",
+                    "value": "27°C ± 5°C",
+                    "iconKey": "Thermometer",
+                    "colors": {
+                        "bg": "bg-green-50",
+                        "border": "border-green-100",
+                        "text": "text-green-700"
+                    }
+                },
+                {
+                    "label": "Rainfall",
+                    "value": "130-230 cm annually",
+                    "iconKey": "CloudRain",
+                    "colors": {
+                        "bg": "bg-blue-50",
+                        "border": "border-blue-100",
+                        "text": "text-blue-700"
+                    }
+                },
+                {
+                    "label": "Sunshine",
+                    "value": "2000 hrs/year",
+                    "iconKey": "Droplets",
+                    "colors": {
+                        "bg": "bg-purple-50",
+                        "border": "border-purple-100",
+                        "text": "text-purple-700"
+                    }
+                }
+            ]
+        },
+        "sowing": {
+            "title": "Planting Guide",
+            "items": [
+                {
+                    "label": "Planting Season",
+                    "value": "May - June (Pre-monsoon)"
+                },
+                {
+                    "label": "Pit Size",
+                    "value": "1 x 1 x 1 m"
+                },
+                {
+                    "label": "Spacing",
+                    "value": "7.5 x 7.5 m (Triangular)"
+                },
+                {
+                    "label": "Seedling Age",
+                    "value": "9-12 months old"
+                }
+            ]
+        },
+        "fertilizer": {
+            "title": "Fertilizer Recommendations",
+            "columns": [
+                "Nutrient",
+                "General Dose (g/palm/year)",
+                "Timing"
+            ],
+            "rows": [
+                {
+                    "nutrient": "Urea (N)",
+                    "dosage": "500-1000g",
+                    "timing": "Split doses (May-June & Sept-Oct)"
+                },
+                {
+                    "nutrient": "Rock Phosphate (P)",
+                    "dosage": "1000g",
+                    "timing": "Annual application"
+                },
+                {
+                    "nutrient": "Muriate of Potash (K)",
+                    "dosage": "2000g",
+                    "timing": "Split doses with N"
+                },
+                {
+                    "nutrient": "Organic Manure",
+                    "dosage": "25-50 kg",
+                    "timing": "Annually with first rain"
+                }
+            ]
+        },
+        "irrigation": {
+            "title": "Irrigation Schedule",
+            "subtitle": "Coconut responds well to summer irrigation. Drip irrigation is highly recommended for water efficiency.",
+            "items": [
+                {
+                    "stage": "Summer Irrigation",
+                    "time": "Dec - May",
+                    "method": "40-50 Liters/palm/day"
+                }
+            ]
+        },
+        "pest": {
+            "title": "Pest & Disease Management",
+            "items": [
+                {
+                    "name": "Rhinoceros Beetle",
+                    "symptoms": "V-shaped cuts on leaves",
+                    "control": "Field sanitation, use of pheromone traps"
+                },
+                {
+                    "name": "Red Palm Weevil",
+                    "symptoms": "Holes on stem, oozing, wilting of inner leaves",
+                    "control": "Stem injection with Imidacloprid"
+                },
+                {
+                    "name": "Bud Rot",
+                    "symptoms": "Yellowing of young leaves, rotting of bud",
+                    "control": "Clean crown, apply Bordeaux paste"
+                }
+            ]
+        },
+        "harvesting": {
+            "title": "Harvesting Tips",
+            "content": "Coconuts are harvested at varying intervals. Tender nuts are harvested at 7-8 months. Mature nuts for copra/oil are harvested at 11-12 months when the husk turns brown. Yield varies from 80-100 nuts/palm/year for good varieties."
+        }
+    }
+}

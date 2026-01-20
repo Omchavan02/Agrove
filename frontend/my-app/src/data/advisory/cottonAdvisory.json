@@ -1,0 +1,148 @@
+{
+    "header": {
+        "title": "Cotton Advisory",
+        "image": "https://res.cloudinary.com/dkdmefrit/image/upload/v1767497579/download_1_qmmvvb.jpg",
+        "imageAlt": "Cotton field",
+        "tags": [
+            {
+                "text": "Kharif",
+                "bgClass": "bg-green-600"
+            },
+            {
+                "text": "Soil: Black (Regur), Alluvial",
+                "bgClass": "bg-gray-700"
+            }
+        ]
+    },
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Cotton, known as 'White Gold', is a major fibre crop of India. India is the largest producer of cotton in the world. It requires a long frost-free period and plenty of sunshine."
+        },
+        "climate": {
+            "title": "Ideal Soil & Climate",
+            "items": [
+                {
+                    "label": "Temperature",
+                    "value": "21-30°C",
+                    "iconKey": "Thermometer",
+                    "colors": {
+                        "bg": "bg-orange-50",
+                        "border": "border-orange-100",
+                        "text": "text-orange-700"
+                    }
+                },
+                {
+                    "label": "Rainfall",
+                    "value": "50-100 cm",
+                    "iconKey": "CloudRain",
+                    "colors": {
+                        "bg": "bg-blue-50",
+                        "border": "border-blue-100",
+                        "text": "text-blue-700"
+                    }
+                },
+                {
+                    "label": "Frost Free Days",
+                    "value": "Min 210 Days",
+                    "iconKey": "Sun",
+                    "colors": {
+                        "bg": "bg-yellow-50",
+                        "border": "border-yellow-100",
+                        "text": "text-yellow-700"
+                    }
+                }
+            ]
+        },
+        "sowing": {
+            "title": "Sowing Guide",
+            "items": [
+                {
+                    "label": "North India",
+                    "value": "April - May"
+                },
+                {
+                    "label": "Central/South India",
+                    "value": "June - July"
+                },
+                {
+                    "label": "Spacing",
+                    "value": "60x30 cm to 90x60 cm"
+                },
+                {
+                    "label": "Seed Rate",
+                    "value": "1.5-2.5 kg/ha (Bt Cotton)"
+                }
+            ]
+        },
+        "fertilizer": {
+            "title": "Fertilizer Recommendations",
+            "columns": [
+                "Nutrient",
+                "Dosage",
+                "Application Timing"
+            ],
+            "rows": [
+                {
+                    "nutrient": "Nitrogen (N)",
+                    "dosage": "100-120 kg/ha",
+                    "timing": "Splits: Basal + 30, 60, 90 DAS"
+                },
+                {
+                    "nutrient": "Phosphorus (P)",
+                    "dosage": "60 kg/ha",
+                    "timing": "Basal Application"
+                },
+                {
+                    "nutrient": "Potassium (K)",
+                    "dosage": "60 kg/ha",
+                    "timing": "Basal + 60 DAS"
+                }
+            ]
+        },
+        "irrigation": {
+            "title": "Irrigation Schedule",
+            "items": [
+                {
+                    "stage": "Vegetative",
+                    "time": "20-40 DAS",
+                    "method": "Avoid waterlogging"
+                },
+                {
+                    "stage": "Flowering/Square",
+                    "time": "45-70 DAS",
+                    "method": "Critical Stage"
+                },
+                {
+                    "stage": "Boll Formation",
+                    "time": "75+ DAS",
+                    "method": "Adequate moisture needed"
+                }
+            ]
+        },
+        "pest": {
+            "title": "Pest & Disease Management",
+            "items": [
+                {
+                    "name": "Pink Bollworm",
+                    "symptoms": "Rosette flowers, larvae inside bolls",
+                    "control": "Pheromone traps, Neem oil"
+                },
+                {
+                    "name": "Jassids/Thrips",
+                    "symptoms": "Sucking sap, leaf curling",
+                    "control": "Imidacloprid/Acetamiprid"
+                },
+                {
+                    "name": "Leaf Curl Virus",
+                    "symptoms": "Upward curling of leaves",
+                    "control": "Vector (Whitefly) control"
+                }
+            ]
+        },
+        "harvesting": {
+            "title": "Harvesting Tips",
+            "content": "Pick cotton when bolls fully burst and are fluffy. Avoid picking wet cotton. Picking is usually done in 3-4 pickings at untrvlas of 15-20 days."
+        }
+    }
+}
