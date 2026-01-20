@@ -33,7 +33,7 @@ app.use(express.json());
 // connectDB(); // Optional if manual connect is used below, but keeping it if it does something specific
 
 /* DATABASE */
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI || process.env.MONGODB_URI)
   .then(() => console.log("✅ MongoDB connected"))
   .catch(err => console.error("❌ MongoDB error:", err));
 
